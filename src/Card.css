@@ -1,0 +1,53 @@
+  .card{
+      /*helps in spacing out the cards */
+    margin:10px; 
+    border-radius: 10px;
+    /* The CSS overflow property controls what happens to content that is too big to fit into an area.
+    hidden - The overflow is clipped, and the rest of the content will be invisible*/
+    overflow: hidden;
+    /*for the animation */
+    box-shadow: 0px 6px 18px -px rgba(0,0,0,0.75);
+    /* CSS transitions allows you to change property values smoothly, over a given duration.
+    Here , the effect takes 100 miliseconds to complete 
+    along with smooth ease-in effect*/
+    transition: transform 100ms ease-in;
+/* The cursor property specifies the mouse cursor to be displayed when pointing over an element.*/
+    cursor: pointer;;
+  }
+
+  .card:hover{
+      /*enlarges the size of the card */
+      transform: scale(1.07);
+  }
+
+  .card>img{
+    /*fill - This is default. The replaced content is sized to fill the element's content box. If necessary, the object will be stretched or squished to fit */
+      object-fit: fill;
+      min-width: 300px;
+      min-height: 200px;
+      /*we can say that the div is of full size but the flex property made them look smaller. 
+      otherwise they would have been larger. try removing this line and you ll figure out 
+      %	Defines the width in percent of the containing block*/
+      width: 100%;
+  }
+
+  .card__info{
+margin-top: -9px;
+border-radius: 10px;
+padding: 20px;
+padding-top: 20px;
+
+  }
+
+  .card__info>h2{
+    font-size: 18px;
+   /*Font-weight defines the thinness or thickness of a font. The ranges are 100 to 900. Normal font is 400. 700 is bold. So 900 would be an "extra bold" and a 100 would be an "extra light". */
+    font-weight: 600;
+  }
+  
+  .card__info>h4{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }

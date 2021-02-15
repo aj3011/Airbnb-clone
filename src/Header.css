@@ -1,0 +1,46 @@
+/*The object-fit property is used to
+ specify how an <img> or <video> 
+ should be resized to fit its container.*/
+.header__icon{
+    object-fit: contain; /*resizes itself relative to the size of the screen;*/
+    height:100px;
+    margin-left: 20px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*iska mtlb ki items ke beech mei space honi chahiye */
+    position: sticky;/*so that it stays on top if we scroll the page*/
+    /* top:0; */
+    background-color: white;
+    /* z-index: 100; */
+    width: 100%;
+
+}
+
+.header__center{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: fit-content;
+    padding: 10px;/* space around the element */ 
+    height: 30px;
+    border:1px solid lightgray;
+    border-radius: 999px;
+}
+
+.header__center>input{
+    border:none;
+    padding: 10px;
+    outline-width: 0;/*removes the outline of width box */
+    /* width: 250px; */
+}
+
+.header__right{
+    display: flex;/* globe, dropdown and avatar ko ek line mei laane ke liye */
+    align-items: center;
+    justify-content:space-between;
+    width: 15vw;
+    margin-right:80px;
+}

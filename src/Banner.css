@@ -1,0 +1,62 @@
+.banner
+{
+    background: url("https://wallpapercave.com/wp/MbkKlLj.jpg");
+    background-position: center;
+    height: 60vh;
+   position: relative; 
+}
+
+.banner__info{
+    /*sets the color of all the headings and buttons to black. after setting them black
+    we see that the text also hides in that color
+    .so we set the text of the color to white */
+    background-color:black ;
+    color:white;
+    padding-top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+/* sets the width and height of the banner__info (black box on the right) */
+    width:300px;
+
+   
+}
+
+.banner__info>button{
+    background-color: #ff7779;
+    color: white;
+    margin-top: 5px;
+    /* Although we wrote Explore Nearby in the banner.js ,
+    material ui writes all words as capital by default. 
+    so to avoid that we wrote text-transform: inherit over here;*/
+    text-transform: inherit;
+    /* font-weight is meant for setting the weight (boldness) of the font*/
+    font-weight:600 ;
+}
+
+.banner__info>button:hover{
+    background-color: white;
+    color:#ff7779;
+}
+.banner__info>h5{
+    margin-top: 5px;
+}
+ .banner__search{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .banner__search>button{
+    background-color: white;
+    font-weight: 900;
+    text-transform: inherit;
+    color:#ff7779;
+}
+
+.banner__search>button:hover{
+    background-color: white;
+    font-weight: 900;
+    text-transform: inherit;
+    color:#ff7779;
+
+}
